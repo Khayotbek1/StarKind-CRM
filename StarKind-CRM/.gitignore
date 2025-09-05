@@ -1,0 +1,19 @@
+*.pyc pycache/ *.pyo *.pyd .Python *.egg-info/ dist/ build/ *.egg
+
+.venv/ venv/ ENV/ env/
+.env
+
+#Django maxsus
+*.log *.pot *.pyc migrations/ *.sqlite3 media/ staticfiles/
+
+.idea/ .vscode/ *.sublime-project *.sublime-workspace
+
+#MacOS
+.DS_Store
+
+#Test fayllar
+htmlcov/ .coverage .coverage.* .cache nosetests.xml coverage.xml *.cover *.py,cover .pytest_cache/
+
+*.swp *~
+
+*.bak *.gho *.ori *.orig *.tmp
