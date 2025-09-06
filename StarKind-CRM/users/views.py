@@ -3,8 +3,9 @@ from .serializers import *
 
 from rest_framework import generics
 from rest_framework.permissions import IsAuthenticated
+from .permissions import *
 
-class RegisterAPIView(generics.CreateAPIView):
+class RegisterAPIView(generics.ListCreateAPIView):
     queryset = User.objects.all()
     serializer_class = RegisterSerializer
 
@@ -14,3 +15,11 @@ class AccountDetailAPIView(generics.RetrieveAPIView):
 
     def get_object(self):
         return self.request.user
+
+
+class AdminOrManagerDetailAPIView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = User.objects.all()
+    permission_classes = [IsAdminOrManager, IsAuthenticated]
+    serializer_class = AdminOrManagerRetrieveSerializer
+
+

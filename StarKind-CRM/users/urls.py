@@ -6,4 +6,5 @@ from  .views import *
 urlpatterns = [
     path('register/', RegisterAPIView.as_view()),
     path('me/', AccountDetailAPIView.as_view()),
+    path('retrieve/', AdminOrManagerDetailAPIView.as_view()),
 ]

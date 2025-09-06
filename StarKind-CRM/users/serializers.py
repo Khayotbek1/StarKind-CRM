@@ -11,3 +11,9 @@ class RegisterSerializer(serializers.ModelSerializer):
 
     def create(self, validated_data):
         return User.objects.create_user(**validated_data)
+
+
+class AdminOrManagerRetrieveSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ('id', 'username', 'password', 'first_name', 'last_name', 'phone_number', 'position', 'image')
