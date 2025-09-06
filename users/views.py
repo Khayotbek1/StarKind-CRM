@@ -22,4 +22,7 @@ class AdminOrManagerDetailAPIView(generics.RetrieveUpdateDestroyAPIView):
     permission_classes = [IsAdminOrManager, IsAuthenticated]
     serializer_class = AdminOrManagerRetrieveSerializer
 
+# wuyrn9c328yrn38yr29
+# 3r8cn398ry 32987y
+
 
