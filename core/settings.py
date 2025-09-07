@@ -45,6 +45,8 @@ INSTALLED_APPS = [
     #apps
     'users.apps.UsersConfig',
     'branch.apps.BranchConfig',
+    'child',
+    'groups',
 
     #packeges
     'rest_framework',
