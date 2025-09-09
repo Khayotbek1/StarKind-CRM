@@ -9,6 +9,7 @@ from django.conf.urls.static import static
 from django.conf import settings
 from rest_framework_simplejwt.views import (token_refresh, token_obtain_pair)
 
+#SWAGGER
 schema_view = get_schema_view(
    openapi.Info(
       title="StarKind CRM",
