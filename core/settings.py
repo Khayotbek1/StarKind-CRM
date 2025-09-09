@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     #apps
     'users.apps.UsersConfig',
+    'branch.apps.BranchConfig',
 
     #packeges
     'rest_framework',
