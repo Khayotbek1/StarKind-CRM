@@ -3,7 +3,7 @@ from django.contrib.auth.models import AbstractUser
 
 class User(AbstractUser):
 
-    class Position (models.TextChoices):
+    class Position(models.TextChoices):
         ADMIN = "admin", "Adminsitrator"
         MANAGER = "manager", "Manager"
         TEACHER = "teacher", "Teacher"

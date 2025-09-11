@@ -9,6 +9,7 @@ from django.conf.urls.static import static
 from django.conf import settings
 from rest_framework_simplejwt.views import (token_refresh, token_obtain_pair)
 
+#SWAGGER
 schema_view = get_schema_view(
    openapi.Info(
       title="StarKind CRM",
@@ -25,7 +26,8 @@ schema_view = get_schema_view(
 urlpatterns = [
     path('docs/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     path('users/', include('users.urls')),
-    path('branch/', include('branch.urls')),
+    path('branches/', include('branch.urls')),
+    path('groups/', include('group.urls')),
     path('admin/', admin.site.urls),
 ]
 

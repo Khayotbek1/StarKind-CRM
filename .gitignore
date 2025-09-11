@@ -17,3 +17,7 @@ htmlcov/ .coverage .coverage.* .cache nosetests.xml coverage.xml *.cover *.py,co
 *.swp *~
 
 *.bak *.gho *.ori *.orig *.tmp
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
