@@ -45,14 +45,8 @@ INSTALLED_APPS = [
     #apps
     'users.apps.UsersConfig',
     'branch.apps.BranchConfig',
-<<<<<<< HEAD
-    'child',
-    'groups',
-=======
     'group.apps.GroupConfig',
     'child.apps.ChildConfig',
->>>>>>> muzaffar
-
     #packeges
     'rest_framework',
     'rest_framework_simplejwt',
