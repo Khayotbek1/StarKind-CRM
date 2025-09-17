@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'branch.apps.BranchConfig',
     'group.apps.GroupConfig',
     'child.apps.ChildConfig',
+    'payment.apps.PaymentConfig',
     #packeges
     'rest_framework',
     'rest_framework_simplejwt',

@@ -10,6 +10,7 @@ class GroupSerializer(serializers.ModelSerializer):
     class Meta:
         model = Group
         fields = ['name','branch', 'caregiver', 'start_date', 'end_date']
+        extra_kwargs = {"id": {"read_only": True}}
 
     def to_internal_value(self, data):
         # Agar frontend bo'sh string yuborsa uni date.today() ga o'zgartirish

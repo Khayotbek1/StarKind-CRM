@@ -14,7 +14,7 @@ schema_view = get_schema_view(
    openapi.Info(
       title="StarKind CRM",
       default_version='v1',
-      description="Test description",
+      description="Manager: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY1NDUyNDczLCJpYXQiOjE3NTc2NzY0NzMsImp0aSI6Ijg4OWQxN2MwZTNlZjQ2NWViY2Y1ODRlNmJlYTcxOWY1IiwidXNlcl9pZCI6IjEifQ.5TMbdvpKZuzp0ufM57QvRUuu1pGVFz4I1aKpAM3BZcc ",
       terms_of_service="https://www.google.com/policies/terms/",
       contact=openapi.Contact(email="contact@snippets.local"),
       license=openapi.License(name="BSD License"),
@@ -28,6 +28,8 @@ urlpatterns = [
     path('users/', include('users.urls')),
     path('branches/', include('branch.urls')),
     path('groups/', include('group.urls')),
+    path('children/', include('child.urls')),
+    path('payments/', include('payment.urls')),
     path('admin/', admin.site.urls),
 ]
 
